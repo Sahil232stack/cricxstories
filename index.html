@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CricStories - Home</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      color: #222;
+    }
+    header {
+      background: #0d6efd;
+      color: white;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background: url('https://i.ibb.co/dmfDy9N/cricket-bg.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 18px;
+    }
+    .stories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .story-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .story-card:hover {
+      transform: translateY(-5px);
+    }
+    .story-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .story-card .content {
+      padding: 15px;
+    }
+    .story-card h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      color: #0d6efd;
+    }
+    .story-card p {
+      font-size: 14px;
+      color: #555;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0d6efd;
+      color: white;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>CricStories</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Players</a>
+      <a href="#">Stories</a>
+      <a href="#">About</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome to CricStories</h2>
+    <p>Where cricket meets stories beyond the scoreboards!</p>
+  </section>
+
+  <!-- Stories Section -->
+  <section class="stories">
+    <div class="story-card">
+      <img src="https://i.ibb.co/G9Wq4Y6/siraj.jpg" alt="Siraj">
+      <div class="content">
+        <h3>Siraj’s Magic in England</h3>
+        <p>Mohammed Siraj’s fiery spell turned the game around in Leeds...</p>
+      </div>
+    </div>
+    <div class="story-card">
+      <img src="https://i.ibb.co/nQ0bDgV/virat.jpg" alt="Virat Kohli">
+      <div class="content">
+        <h3>Virat’s Century vs Australia</h3>
+        <p>A masterclass in run-chasing – Kohli’s innings is a story of grit...</p>
+      </div>
+    </div>
+    <div class="story-card">
+      <img src="https://i.ibb.co/j8MtjDq/dhoni.jpg" alt="MS Dhoni">
+      <div class="content">
+        <h3>Dhoni’s Finisher Moment</h3>
+        <p>The calmness, the six, and the World Cup glory – reliving 2011!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 CricStories. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
